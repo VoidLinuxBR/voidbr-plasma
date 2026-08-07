@@ -97,15 +97,28 @@ depends=(
 	voidbr-wallpapers            # Wallpapers for Void Linux BR
 	voidbr-webapps               # Atalhos de webapps VoidLinuxBR
 	wireplumber                  # Gerenciador de sessão para PipeWire
-	xauth                        # Gerenciamento de autenticação X11 (.Xauthority)
-	xdg-user-dirs                # Tool to help manage user directories
-	xdg-user-dirs-gtk            # GTK+ tool to help manage user directories
-	xfce4-terminal               # Terminal alternativo (Xfce)
-	xorg                         # Servidor X completo + drivers + apps base
-	xorg-apps                    # Aplicativos utilitários do Xorg
-	xorg-fonts                   # Fontes do Xorg
-	xorg-server-xwayland         # Compatibilidade com apps X11 legados dentro do Wayland
-	xterm                        # Terminal X11 básico
+  xdg-desktop-portal        # Camada de comunicação entre apps e o desktop
+  xdg-desktop-portal-gtk    # Implementação GTK do portal XDG
+  xdg-user-dirs             # Tool to help manage user directories
+  xdg-user-dirs-gtk         # GTK+ tool to help manage user directories
+  xdg-utils                 # Ferramentas de integração com a área de trabalho
+  xfce4                     # Meta-pacote do ambiente XFCE
+  xfce4-datetime-plugin     # Plugin de data/hora para o painel do XFCE
+  xfce4-dict                # Plugin de dicionário para o XFCE
+  xfce4-plugins             # Plugins adicionais para o painel do XFCE
+  xfce4-pulseaudio-plugin   # Plugin de controle de áudio para o painel do XFCE
+  xfce4-screenshooter       # Utilitário de captura de tela do XFCE
+  xfce4-terminal            # Terminal padrão do XFCE
+  xorg                      # Servidor X completo + drivers + apps base
+  xorg-apps                 # Aplicativos utilitários do Xorg
+  xorg-fonts                # Fontes do Xorg
+  xorg-server-xwayland      # Compatibilidade com apps X11 legados dentro do Wayland
+  xauth                     # Gerenciamento de autenticação X11 (.Xauthority)
+  xterm                     # Terminal X11 básico
+  qt5-wayland               # Cross-platform application and UI framework (QT5) - Wayland component
+  qt5ct                     # Qt5 Configuration Tool
+  qt6-wayland               # Cross-platform application and UI framework - Wayland
+  qt6ct                     # Qt6 Configuration Tool
 )
 backup=()
 

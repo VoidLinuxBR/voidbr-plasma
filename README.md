@@ -1,3 +1,3 @@
-# voidbr-pkgfile
+# voidbr-plasma
 
-Template for VoidBR pkgmake/pkgfile packages
+VoidBR PLASMA Meta Package

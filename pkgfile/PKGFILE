@@ -152,6 +152,11 @@ pre_install() {
 }
 
 post_install() {
+	log "Aplicando configuracoes para $user"
+	cd $user_home
+	cp -Rpa /etc/skel/. .
+	chown $user:$user . -R
+  vservice add sddm
 	log "Finalizando instalação"
 }
 

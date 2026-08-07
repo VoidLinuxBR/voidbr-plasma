@@ -27,9 +27,6 @@ depends=(
   kwalletmanager
   spectacle
   powerdevil                   # Power consumption settings of a Plasma
-  #
-  sddm
-  #
 	7zip                         # Compactador/descompactador de arquivos (formato 7z)
 	Adapta                       # Tema GTK
 	adwaita-icon-theme           # Tema de ícones padrão GNOME/GTK
@@ -67,6 +64,7 @@ depends=(
 	libheif-pixbuf-loader        # Integração do libheif com o gdk-pixbuf
 	libjack-pipewire             # Compatibilidade JACK sobre PipeWire
 	libspa-bluetooth             # Suporte a Bluetooth para o PipeWire (SPA)
+  sddm
 	lightdm                      # Display manager
 	lightdm-gtk-greeter          # Tela de login (greeter) do lightdm
 	lightdm-gtk-greeter-settings # Configurador gráfico do greeter do lightdm
@@ -155,9 +153,10 @@ pre_install() {
 
 post_install() {
 	log "Aplicando configuracoes para $user"
-	cd $user_home
-	cp -Rpa /etc/skel/. .
-	chown $user:$user . -R
+	voidbr-copy-skel --user $user --force
+# cd $user_home
+#	cp -Rpa /etc/skel/. .
+#	chown $user:$user . -R
   vservice add sddm
 	log "Finalizando instalação"
 }

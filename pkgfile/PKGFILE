@@ -15,7 +15,22 @@ source=("git+${url}.git")
 md5sums=('SKIP')
 makedepends=()
 depends=(
+  kde5                         # Meta-pacote do ambiente KDE Plasma 5
+  plasma-desktop
+  plasma-nm
+  plasma-pa
+  plasma-disks
+  kf6-kaccounts-integration
+  kaccounts-providers
+  signon-kwallet-extension
+  ark
+  kwalletmanager
+  spectacle
   powerdevil                   # Power consumption settings of a Plasma
+  #
+  sddm
+  voidbr-sddm-themes
+  #
 	7zip                         # Compactador/descompactador de arquivos (formato 7z)
 	Adapta                       # Tema GTK
 	adwaita-icon-theme           # Tema de ícones padrão GNOME/GTK
@@ -47,7 +62,6 @@ depends=(
 	inetutils                    # Utilitários de rede (telnet, ftp, etc.)
 	iputils                      # Utilitários de rede (ping, etc.)
 	kate                         # Editor de texto avançado do KDE
-	kde5                         # Meta-pacote do ambiente KDE Plasma 5
 	konsole                      # Terminal padrão do KDE
 	libavif                      # Suporte a imagens no formato AVIF
 	libheif                      # Suporte a imagens no formato HEIF

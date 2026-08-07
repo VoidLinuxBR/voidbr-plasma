@@ -29,7 +29,6 @@ depends=(
   powerdevil                   # Power consumption settings of a Plasma
   #
   sddm
-  voidbr-sddm-themes
   #
 	7zip                         # Compactador/descompactador de arquivos (formato 7z)
 	Adapta                       # Tema GTK
@@ -87,6 +86,9 @@ depends=(
 	terminus-font                # Fonte de console
 	ttf-jetbrains-mono-nerd      # Patched font JetBrains Mono from nerd fonts library
 	ttf-ubuntu-font-family       # Ubuntu font family
+  voidbr-utils
+  voidbr-base-config
+  voidbr-sddm-themes
 	voidbr-beauty-icons          # Tema de ícones VoidLinuxBR
 	voidbr-dracula-theme         # Tema visual Dracula aplicado
 	voidbr-iso-writer            # Utilitário gráfico para gravar ISO em pendrive

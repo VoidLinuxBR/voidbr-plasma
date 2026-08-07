@@ -153,7 +153,7 @@ pre_install() {
 
 post_install() {
 	log "Aplicando configuracoes para $user"
-	voidbr-copy-skel --user $user --force
+	voidbr-copy-skel-inc --user $user --force --quiet
 # cd $user_home
 #	cp -Rpa /etc/skel/. .
 #	chown $user:$user . -R

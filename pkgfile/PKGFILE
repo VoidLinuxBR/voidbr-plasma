@@ -15,7 +15,7 @@ source=("git+${url}.git")
 md5sums=('SKIP')
 makedepends=()
 depends=(
-	voidbr-bsse-common
+	voidbr-base-common
 	voidbr-xorg-common
 	voidbr-wayland-common
 	voidbr-gui-common

@@ -19,7 +19,7 @@ depends=(
 	voidbr-xorg-common
 	voidbr-wayland-common
 	voidbr-gui-common
-	kde5 # Meta-pacote do ambiente KDE Plasma 5
+	kde5                     # Meta-pacote do ambiente KDE Plasma 5
 	plasma-desktop
 	plasma-nm
 	plasma-pa
@@ -34,9 +34,10 @@ depends=(
 	dolphin                   # Gerenciador de arquivos do KDE
 	kate                      # Editor de texto avançado do KDE
 	konsole                   # Terminal padrão do KDE
-	voidbr-dracula-theme      # Tema visual Dracula aplicado
-	voidbr-plasma-config      # Configuração base do Plasma personalizada
-	voidbr-professional-theme # Tema visual "professional"
+	# voidbr-dracula-theme
+	# voidbr-professional-theme
+  voidbr-tokyo-theme
+	voidbr-plasma-config
 )
 backup=()
 

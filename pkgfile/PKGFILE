@@ -88,10 +88,10 @@ post_install() {
   # cd $user_home
   # cp -Rpa /etc/skel/. .
   # chown $user:$user . -R
-  /usr/local/bin/voidbr-copy-skel-inc --user $user --force --quiet
+  /usr/local/bin/voidbr-copy-skel-inc --user $user --force --quiet || true
 
   log "Ativando serviços"
-  /usr/local/bin/vservice add sddm --quiet
+  /usr/local/bin/vservice add sddm --quiet || true
 
   log "Finalizando instalação"
 }
@@ -99,11 +99,11 @@ post_install() {
 post_install() {
   if [ -n "$user" ] ; then
     log "Aplicando configuracoes para $user"
-    /usr/local/bin/voidbr-copy-skel-inc --user "$user" --force --quiet
+    /usr/local/bin/voidbr-copy-skel-inc --user "$user" --force --quiet || true
   fi
 
   log "Ativando serviços"
-  /usr/local/bin/vservice add sddm --quiet
+  /usr/local/bin/vservice add sddm --quiet || true
 
   log "Finalizando instalação"
   log "${YELLOW}Instalação completa. Reinicie o sistema...${RESET}"
